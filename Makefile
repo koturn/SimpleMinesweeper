@@ -22,13 +22,13 @@ C_WARNING_FLAGS := -Wall -Wextra -Wformat=2 -Wstrict-aliasing=2 \
                    -Wfloat-equal -Wpointer-arith -Wswitch-enum \
                    -Wwrite-strings -pedantic
 
-CC       := gcc
-MACROS   := -DNDEBUG
-CFLAGS   := -pipe $(C_WARNING_FLAGS) $(COPTFLAGS) $(MACROS)
-LDFLAGS  := -pipe $(LDOPTFLAGS)
-TARGET   := minesweeper
-OBJS     := $(addsuffix .o, $(basename $(TARGET)))
-SRCS     := $(OBJS:%.o=%.c)
+CC      := gcc
+MACROS  := -DNDEBUG
+CFLAGS  := -pipe $(C_WARNING_FLAGS) $(COPTFLAGS) $(MACROS)
+LDFLAGS := -pipe $(LDOPTFLAGS)
+TARGET  := minesweeper
+OBJS    := $(addsuffix .o, $(basename $(TARGET)))
+SRCS    := $(OBJS:%.o=%.c)
 
 ifeq ($(OS),Windows_NT)
     TARGET := $(addsuffix .exe, $(TARGET))

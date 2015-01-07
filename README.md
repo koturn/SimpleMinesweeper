@@ -1,6 +1,8 @@
 SimpleMinesweeper
 =================
 
+[![Build Status](https://travis-ci.org/koturn/SimpleMinesweeper.png)](https://travis-ci.org/koturn/SimpleMinesweeper)
+
 Simple implementation of minesweeper in C-language
 
 
